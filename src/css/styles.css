@@ -7,7 +7,7 @@
 @import url('./reset.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -20,4 +20,61 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding-top: 36px;
+  display: flex;
+  gap: 8px;
+}
+
+.search-input {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 272px;
+  outline: transparent;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+  border: 1px solid #808080;
+}
+
+.search-input:hover {
+  border-color: #000;
+}
+
+.search-input:focus {
+  border-color: #4e75ff;
+  color: #2e2f42;
+}
+
+.search-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 91px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms linear;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background: #6c8cff;
 }
