@@ -43,6 +43,8 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
+lightbox.refresh();
+
 function showLoader() {
   refs.loader.classList.remove('hidden');
 }
