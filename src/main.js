@@ -16,4 +16,5 @@ function requestImgGallery(e) {
 
   const valueInput = e.target.elements.searchField.value;
   console.log(valueInput);
+  
 }
