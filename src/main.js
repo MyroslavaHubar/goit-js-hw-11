@@ -22,7 +22,7 @@ function requestImgGallery(e) {
   showLoader();
   fetchGallery(valueInput)
     .then(data => {
-      console.log(data);
+      // console.log(data);
       // galleryTemplate(data.hits);
       if (data.total === 0) {
         showError();
