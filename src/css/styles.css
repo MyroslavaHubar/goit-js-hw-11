@@ -26,16 +26,25 @@ body {
   box-sizing: border-box;
 }
 
-.form-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ul,
+li {
+  list-style-type: none;
+}
+
+image {
+  display: block;
 }
 
 form {
   padding-top: 36px;
   display: flex;
   gap: 8px;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-input {
@@ -77,15 +86,6 @@ form {
 .search-btn:hover,
 .search-btn:focus {
   background: #6c8cff;
-}
-
-ul,
-li {
-  list-style-type: none;
-}
-
-image {
-  display: block;
 }
 
 .gallery {
@@ -132,6 +132,10 @@ image {
   animation-delay: 0.4s;
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotateZ(0deg);
@@ -176,8 +180,4 @@ image {
   87% {
     box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
-}
-
-.hidden {
-  display: none;
 }
