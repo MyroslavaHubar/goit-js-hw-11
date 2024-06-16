@@ -13,16 +13,16 @@ function imgTemplate(img) {
             <p>${img.likes}</p>
           </div>
           <div>
-            <p></p>
-            <p></p>
+            <p>Views</p>
+            <p>${img.views}</p>
           </div>
           <div>
-            <p></p>
-            <p></p>
+            <p>Comments</p>
+            <p>${img.comments}</p>
           </div>
           <div>
-            <p></p>
-            <p></p>
+            <p>Downloads</p>
+            <p>${img.downloads}</p>
           </div>
         </div>
 </li>
