@@ -8,19 +8,19 @@ function imgTemplate(img) {
 			/>
 	</a>
     <div class="item-footer">
-          <div>
+          <div class="item-footer-pair">
             <p>Likes</p>
             <p>${img.likes}</p>
           </div>
-          <div>
+          <div class="item-footer-pair">
             <p>Views</p>
             <p>${img.views}</p>
           </div>
-          <div>
+          <div class="item-footer-pair">
             <p>Comments</p>
             <p>${img.comments}</p>
           </div>
-          <div>
+          <div class="item-footer-pair">
             <p>Downloads</p>
             <p>${img.downloads}</p>
           </div>

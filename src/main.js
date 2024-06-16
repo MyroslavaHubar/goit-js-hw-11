@@ -54,7 +54,7 @@ function hideLoader() {
 function showError() {
   iziToast.error({
     title: '',
-    message: `❌ Rejected promise in ms`,
+    message: `Sorry, there are no images matching your search query. Please try again!`,
     messageLineHeight: '1.5',
     messageSize: '16',
     messageColor: '#fff',
