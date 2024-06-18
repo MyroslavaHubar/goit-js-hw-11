@@ -31,7 +31,9 @@ function requestImgGallery(e) {
       refs.ulElem.innerHTML = markup;
       lightbox.refresh();
     })
-    .catch(err => {})
+    .catch(() => {
+      warningError();
+    })
     .finally(() => {
       hideLoader();
     });
@@ -56,7 +58,21 @@ function hideLoader() {
 function showError() {
   iziToast.error({
     title: '',
-    message: `Sorry, there are no images matching your search query. Please try again!`,
+    message:
+      'Sorry, there are no images matching your search query. Please try again!',
+    messageLineHeight: '1.5',
+    messageSize: '16',
+    messageColor: '#fff',
+    position: 'topRight',
+    backgroundColor: '#ef4040',
+    icon: false,
+  });
+}
+
+function warningError() {
+  iziToast.warning({
+    title: '',
+    message: 'Sorry! There was a problem with the server!',
     messageLineHeight: '1.5',
     messageSize: '16',
     messageColor: '#fff',
