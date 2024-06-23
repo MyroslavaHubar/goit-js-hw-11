@@ -57,14 +57,15 @@ function hideLoader() {
 
 function showError() {
   iziToast.error({
-    title: '',
+    // title: '',
     message:
       'Sorry, there are no images matching your search query. Please try again!',
-    messageLineHeight: '1.5',
-    messageSize: '16',
-    messageColor: '#fff',
+    // messageLineHeight: '1.5',
+    // messageSize: '16',
+    // messageColor: '#fff',
     position: 'topRight',
     backgroundColor: '#ef4040',
+    maxWidth: '472px',
     icon: false,
   });
 }
